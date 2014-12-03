@@ -1,6 +1,11 @@
+import numpy as np
+
 def factorial(a):
 	"""return factorial of a"""
-	return a
+	if a == 0:
+		return 1
+	else:
+		return np.prod(np.arange(int(a))+1)
 	
 def test_factorial():
 	assert(factorial(0) == 1)
