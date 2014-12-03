@@ -9,7 +9,7 @@ def factorial(a):
 		
 def another_func(a):
 	"""just return a"""
-	return 0
+	return a
 	
 def test_factorial():
 	assert(factorial(0) == 1)
